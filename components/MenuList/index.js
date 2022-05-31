@@ -47,7 +47,7 @@ export default function MenuList({ className }) {
     width: 300px;
     height: 100vh;
     background: var(--black);
-    z-index: 999;
+    z-index: 1;
   }
 
   .menu__mobile a {
@@ -62,7 +62,7 @@ export default function MenuList({ className }) {
 
   @media screen and (min-width: 768px) {
     .menu__mobile {
-      display: none;
+      width: 0;
     }
 
     .menu__desktop {

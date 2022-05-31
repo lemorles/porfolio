@@ -1,23 +1,40 @@
+import { useContext } from 'react';
 import { useState } from 'react';
-import MenuButton from '../MenuButton';
 import MenuList from '../MenuList';
+import { ThemeContext } from '../../contexts/useTheme';
+import { HamburgerIcon, MoonIcon, SunIcon } from '../IconSVG';
 
 export default function Navbar() {
+  const { toggleTheme } = useContext(ThemeContext);
   const [show, setShow] = useState(false);
+  const [dark, setDark] = useState(false);
 
-  const handleClick = () => setShow(!show);
+  const handleClick = () => {
+    setShow(!show)
+  };
+
+  const handleDark = () => {
+    setDark(!dark);
+    toggleTheme(dark ? "light" : "dark");
+  };
 
   return <header>
     <nav>
-      <p>
-        Leandro Morales
-      </p>
+      <code>
+        {`<Leandro Morales />`}
+      </code>
 
-      <MenuList className='menu__desktop' />
       {show && <MenuList className='menu__mobile' />}
-
-      <MenuButton onClick={handleClick} />
+      <div className='wrapper__buttons'>
+      <MenuList className='menu__desktop' />
+        {
+          dark ? <SunIcon onClick={handleDark} />
+            : <MoonIcon onClick={handleDark} />
+        }
+        <HamburgerIcon onClick={handleClick} />
+      </div>
     </nav>
+    
     <style jsx>{`
     header {
       max-width: 1000px;
@@ -32,9 +49,20 @@ export default function Navbar() {
         height: 64px; 
       }
 
-      p {
-        text-transform: uppercase;
+      code {
         font-weight: 600;
+        font-size: 16px;
+      }
+
+      .wrapper__buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .btn {
+        cursor: pointer;
+        fill: red;
       }
     `}</style>
   </header>
