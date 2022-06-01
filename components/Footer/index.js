@@ -2,7 +2,7 @@ export default function Footer() {
   return <footer>
     <div className="footer__wrapper">
       <p>
-        Copyright © 2022 Leandro Morales. All rights reserved.
+        Copyright © 2022 Leandro Morales
       </p>
       <small>
         Built with Next.js and deploy to Vercel
