@@ -3,6 +3,7 @@ import { useState } from 'react';
 import MenuList from '../MenuList';
 import { ThemeContext } from '../../contexts/useTheme';
 import { HamburgerIcon, MoonIcon, SunIcon } from '../IconSVG';
+import Link from 'next/link';
 
 export default function Navbar() {
   const { toggleTheme } = useContext(ThemeContext);
@@ -20,13 +21,15 @@ export default function Navbar() {
 
   return <header>
     <nav>
-      <code>
-        {`<Leandro Morales />`}
-      </code>
+      <Link href="/" >
+        <code>
+          <a className='link'>{`<Leandro Morales />`}</a>
+        </code>
+      </Link>
 
-      {show && <MenuList className='menu__mobile' />}
+      {show && <MenuList className='menu__mobile' onClick={handleClick} />}
       <div className='wrapper__buttons'>
-      <MenuList className='menu__desktop' />
+      <MenuList className='menu__desktop' onClick={handleClick} />
         {
           dark ? <SunIcon onClick={handleDark} />
             : <MoonIcon onClick={handleDark} />
@@ -46,7 +49,7 @@ export default function Navbar() {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 64px; 
+        height: 64px;
       }
 
       code {
@@ -63,6 +66,16 @@ export default function Navbar() {
       .btn {
         cursor: pointer;
         fill: red;
+      }
+
+      .link {
+        text-decoration: none;
+        color: var(--black);
+        cursor: pointer;
+      }
+
+      .link:hover {
+        color: var(--yellow);
       }
     `}</style>
   </header>

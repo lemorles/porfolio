@@ -1,30 +1,30 @@
 import Link from "next/link";
 
-export default function MenuList({ className }) {
+export default function MenuList({ className, onClick }) {
   return <ul className={className}>
     {
-      className === 'menu__mobile' && <li>
+      className === 'menu__mobile' && <li onClick={onClick}>
       <Link href="/">
         <a>Home</a>
       </Link>
     </li>
     }
-    <li>
-      <Link href="#about">
+    <li onClick={onClick}>
+      <Link href="#about" >
         <a>About</a>
       </Link>
     </li>
-    <li>
-      <Link href="#skills">
+    <li onClick={onClick}>
+      <Link href="#skills" >
         <a>Skills</a>
       </Link>
     </li>
-    <li>
+    <li onClick={onClick}>
       <Link href="#projects">
         <a>Projects</a>
       </Link>
     </li>
-    <li>
+    <li onClick={onClick}>
       <Link href="#contact">
         <a>Contact</a>
       </Link>
@@ -52,7 +52,7 @@ export default function MenuList({ className }) {
     width: 300px;
     height: 100vh;
     background: var(--black);
-    z-index: 1;
+    z-index: 999;
   }
 
   .menu__mobile a {

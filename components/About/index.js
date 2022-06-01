@@ -1,10 +1,13 @@
+import Image from 'next/image';
 import Button from "../Button";
 
 export default function About() {
   return <section id="about">
     <article className="about">
       <h1 className="about__title">Hello! I'm Leandro, a full stack developer.</h1>
-      <img src='/images/profile.jpeg' alt="perfil" className="img" />
+      <div className="img">
+        <Image src='/images/profile.jpeg' alt="perfil"  width={300} height={404} style={{ borderRadius: '6px' }}/>
+      </div>
       <p className="about__desc">I have experience working freelance on Frontend projects with React, Redux and Material UI for an insurance broker and wordpress for a construction company. <br />Always ready to listen, learn, teach and above all, improve myself every day as a developer.</p>
       <div className="about__wrapper_buttons">
         <Button
