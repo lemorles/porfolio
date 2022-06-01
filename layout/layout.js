@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { ThemeContext } from "../contexts/useTheme";
 
@@ -26,7 +27,8 @@ export default function Layout({ children }) {
     return <>
     <Navbar />
     <main>{children}</main>
-
+    <Footer />
+    
     <style jsx>{`
         main {
             max-width: 1000px;
