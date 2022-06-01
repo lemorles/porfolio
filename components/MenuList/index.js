@@ -10,17 +10,22 @@ export default function MenuList({ className }) {
     </li>
     }
     <li>
-      <Link href="/">
+      <Link href="#about">
         <a>About</a>
       </Link>
     </li>
     <li>
-      <Link href="/">
+      <Link href="#skills">
+        <a>Skills</a>
+      </Link>
+    </li>
+    <li>
+      <Link href="#projects">
         <a>Projects</a>
       </Link>
     </li>
     <li>
-      <Link href="/">
+      <Link href="#contact">
         <a>Contact</a>
       </Link>
     </li>

@@ -42,7 +42,7 @@ export default function About() {
 
   .about__desc {
     margin: 0 0 32px;
-    max-width: 350px;
+    max-width: 550px;
   }
 
   .about__wrapper_buttons {
@@ -75,6 +75,8 @@ export default function About() {
       grid-area: img;
       width: 300px;
       height: 100%;
+      border-radius: 6px;
+      filter: grayscale(80%);
     }
 
     .about__desc {
