@@ -17,7 +17,7 @@ export const projects = [
     name: 'Countries App',
     desc: "Countries App is a SPA (Single Page Application) in which all the countries of the world and their respective tourist activities can be viewed.",
     img: '/images/projects/countries.png',
-    url: 'hhttps://pi-countries-bay.vercel.app/',
+    url: 'https://pi-countries-bay.vercel.app/',
     github: "https://github.com/lemorles/countries-app"
   },
   {
