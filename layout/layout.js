@@ -53,7 +53,8 @@ export default function Layout({ children }) {
        p,
        blockquote,
        pre {
-           font-family: 'DM Sans', sans-serif;
+           font-family: sans-serif;
+        // font-family: 'DM Sans', sans-serif;
            font-size: 100%;
            font-weight: normal;
            margin: 0;
