@@ -30,12 +30,16 @@ export default function About() {
 
     <style jsx>{`
   section {
-    margin: 64px 0 96px;
+    margin: 0 0 96px;
+    height: 44vh;
+    display: flex;
+    align-items: flex-end;
   }
 
   .about__title {
     font-size: 28px;
     text-align: left;
+    margin: 0 0 16px;
   }
 
   .img {
@@ -56,6 +60,10 @@ export default function About() {
 
 
   @media screen and (min-width: 768px) {
+    section {
+      height: 60vh;
+    }
+
     .about{
       display: grid;
       grid-template-areas: 
@@ -64,7 +72,7 @@ export default function About() {
         "buttons  img";
       align-items: center;
       justify-content: space-between;
-      max-width: 100%;
+      width: 100%;
     }
 
     .about__title {

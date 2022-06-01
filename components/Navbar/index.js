@@ -19,8 +19,8 @@ export default function Navbar() {
     toggleTheme(dark ? "light" : "dark");
   };
 
-  return <header>
-    <nav>
+  return <header className='navbar'>
+    <nav className='navbar-container container'>
       <Link href="/" >
         <code>
           <a className='link'>{`<Leandro Morales />`}</a>
@@ -39,18 +39,35 @@ export default function Navbar() {
     </nav>
     
     <style jsx>{`
-    header {
+    .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 16px;
     }
 
-      nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 64px;
-      }
+    .navbar {
+      // box-shadow: 0px 5px 10px 0px #aaa;
+      position: fixed;
+      width: 100%;
+      background: var(--white);
+      color: #000;
+      // opacity: 0.85;
+      height: 64px;
+      z-index: 12;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      height: 64px;
+      align-items: center;
+    }
+
+      // nav {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: space-between;
+      // }
 
       code {
         font-weight: 600;

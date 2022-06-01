@@ -2,13 +2,6 @@ import Link from "next/link";
 
 export default function MenuList({ className, onClick }) {
   return <ul className={className}>
-    {
-      className === 'menu__mobile' && <li onClick={onClick}>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-    </li>
-    }
     <li onClick={onClick}>
       <Link href="#about" >
         <a>About</a>

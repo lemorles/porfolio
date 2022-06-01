@@ -25,11 +25,11 @@ export default function Layout({ children }) {
     const { theme } = useContext(ThemeContext);
 
     return <>
-    <Navbar />
-    <main>{children}</main>
-    <Footer />
-    
-    <style jsx>{`
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+
+        <style jsx>{`
         main {
             max-width: 1000px;
             margin: 0 auto;
@@ -37,35 +37,25 @@ export default function Layout({ children }) {
         }
     `}</style>
 
-    <style global jsx>{`
-       html,
-       body,
-       div,
-       form,
-       figure,
-       label,
-       h1,
-       h2,
-       h3,
-       h4,
-       h5,
-       h6,
-       p,
-       blockquote,
-       pre {
-           font-family: sans-serif;
-        // font-family: 'DM Sans', sans-serif;
-           font-size: 100%;
-           font-weight: normal;
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-           color: var(--black);
-       }
+        <style global jsx>{`
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-       body {
-         background-color: var(--white);
-         color: var(--black);
+  html {
+      scroll-behavior: smooth;
+  }
+
+    body {
+        font-family: sans-serif;
+        font-size: 100%;
+        font-weight: normal;
+        color: var(--black);
+        background-color: var(--white);
        }
 
        ul, li {
