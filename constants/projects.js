@@ -17,21 +17,21 @@ export const projects = [
     name: 'Countries App',
     desc: "Countries App is a SPA (Single Page Application) in which all the countries of the world and their respective tourist activities can be viewed.",
     img: '/images/projects/countries.webp',
-    url: 'https://pi-countries-bay.vercel.app/',
+    url: 'https://countries-appp.vercel.app/',
     github: "https://github.com/lemorles/countries-app"
   },
   {
     name: 'Portfolio',
     desc: "The portfolio is an app created with Next.js, a React.js framework, in which the skills and some of the projects carried out are shown.",
     img: '/images/projects/portfolio.webp',
-    url: 'https://portfolio-leandro-morales.vercel.app/',
+    url: 'https://lemorles.vercel.app/',
     github: "https://github.com/lemorles/porfolio"
   },
   {
     name: 'Weather App',
     desc: "Weather App is a SPA (Single Page Application) that consumes information from an API and displays the weather of the places chosen by the user.",
     img: '/images/projects/weather.webp',
-    url: 'https://app-clima-delta.vercel.app/',
+    url: 'https://weather-appl.vercel.app/',
     github: "https://github.com/lemorles/weather-app"
   },
 ]
