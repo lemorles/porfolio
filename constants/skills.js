@@ -1,58 +1,62 @@
 export const skills = [
   {
-    name: 'React',
-    icon: '/images/react.png',
+    name: "React.js",
+    icon: "/images/react.png",
   },
   {
-    name: 'Node',
-    icon: '/images/node.png',
+    name: "Next.js",
+    icon: "/images/nextjs.webp",
   },
   {
-    name: 'Express',
-    icon: '/images/express.png',
+    name: "Node.js",
+    icon: "/images/node.png",
   },
   {
-    name: 'Redux',
-    icon: '/images/redux.png',
+    name: "Express",
+    icon: "/images/express.png",
   },
   {
-    name: 'Material UI',
-    icon: '/images/material-ui.png',
+    name: "Redux",
+    icon: "/images/redux.png",
   },
   {
-    name: 'Chakra UI',
-    icon: '/images/chakra-ui.png',
+    name: "Material UI",
+    icon: "/images/material-ui.png",
   },
   {
-    name: 'Mongo DB',
-    icon: '/images/mongo.png',
+    name: "Chakra UI",
+    icon: "/images/chakra-ui.png",
   },
   {
-    name: 'PostgreSQL',
-    icon: '/images/postgres.png',
+    name: "Mongo DB",
+    icon: "/images/mongo.png",
   },
   {
-    name: 'JavaScript',
-    icon: '/images/js.png',
+    name: "PostgreSQL",
+    icon: "/images/postgres.png",
   },
   {
-    name: 'HTML',
-    icon: '/images/html.png',
+    name: "JavaScript",
+    icon: "/images/js.png",
   },
   {
-    name: 'CSS',
-    icon: '/images/css.png',
+    name: "TypeScript",
+    icon: "/images/ts.png",
   },
   {
-    name: 'Sequelize',
-    icon: '/images/sequelize.png',
+    name: "HTML",
+    icon: "/images/html.png",
   },
   {
-    name: 'Vercel',
-    icon: '/images/vercel.png',
+    name: "CSS",
+    icon: "/images/css.png",
   },
   {
-    name: 'Heroku',
-    icon: '/images/heroku.png',
+    name: "Sequelize",
+    icon: "/images/sequelize.png",
   },
-]
+  {
+    name: "Vercel",
+    icon: "/images/vercel.png",
+  },
+];
